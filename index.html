@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>💡 Ideas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha384-DYrp2zq2MpwpsUD/zg8quiwNIBprEgPFt6ThfU0sQW3OkhWAdrZg6VTMwfbQ7315" crossorigin="anonymous">
+  <style>
+    body {
+      margin: 0;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .wrapper {
+      padding: 40px;
+    }
+    label, p, blockquote {
+      font-size: 1.4em; 
+    }
+    blockquote {
+      width: 80%;
+      margin-left: 10px;
+      border-left: 2px solid #8C49CC;
+      background: #fff;
+      padding: 15px 25px;
+      border-radius: 5px;
+      box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+    }
+    blockquote img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      border: 2px solid #8C49CC;
+      margin-top: 20px;
+    }
+    blockquote span {
+      color: #6b7c93;
+    }
+    a {
+      color: #8C49CC;
+      text-decoration: none;
+      border-bottom: 2px solid #8C49CC;
+    }
+    a:hover {
+      color: #6F53CA;
+      border-bottom: 2px solid #6F53CA;
+    }
+    .button.button-primary {
+      background-color: #8C49CC;
+      border: none;
+      box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+      transition: all .15s ease;
+    }
+    .button.button-primary:hover {
+      background-color: #6F53CA;
+      transform: translateY(-1px);
+      box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    }
+    .button.button-primary:focus {
+      background-color: #6F53CA;
+    }
+    .button.button-primary:after {
+      content: '\279C';
+      margin-left: 7px;
+    }
+    form {
+      background: #fff;
+      padding: 15px 30px;
+      border-radius: 5px;
+      box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+    }
+    textarea {
+      min-height: 500px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      font-size: 1.5em;
+    }
+    textarea:focus, input[type="text"]:focus {
+      border: 1px solid #333;
+    }
+    .quotes {
+      background-color: #eee;
+    }
+    .footer {
+      background-color: #eee;
+      color: #333;
+      padding: 45px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>💡 Ideas</h1>
+    <hr>
+    <p><b>We have too many duplicate tools.</b> <i>Ideas</i> is a project trying to redirect this misdirected energy by tracking ideas needed by the infosec community. We review submissions to ensure no other tools exist out there that already cover the user's idea. By doing this we reduce the amount of time wasted by tool developers. The goal is to allow researchers to share their ideas, and allow developers to find ideas for tools to build. Submit your idea to the project by using the form below.</p>
+    <form>
+      <div class="row">
+        <div class="six columns">
+          <label for="title">Title</label>
+          <input class="u-full-width" placeholder="A tool to find XSS vulnerabilities." id="title" type="text">
+        </div>
+      </div>
+      <label for="body">Description</label>
+      <textarea class="u-full-width" placeholder="" id="body">
+# Summary
+
+<!-- What does this tool do? -->
+
+# What problem are you trying to solve?
+
+# Example situation where this tool could be helpful
+
+# Is this tool already under development?
+
+- [ ] This tool is currently under development. **Link:**
+- [ ] This tool is *not* currently under development.
+
+# Are there any similar tools already out there?
+
+- [ ] Yes. **Link:**
+- [ ] No.
+
+---
+
+# Checklist
+
+- [ ] I have verified that there are no similar tickets already open.
+- [ ] I am willing to contribute to the development of this tool.
+- [ ] I am willing to pay someone a small fee to create this tool.
+      </textarea>
+      <a href="#" class="button button-primary" id="button">Submit</a>
+    </form>
+  </div>
+  <section class="quotes">
+    <div class="wrapper">
+      <h1>Example tool suggestions</h1>
+      <hr>
+      <div class="row">
+        <div class="one-third column">
+          <blockquote>
+            "A tool to find js files just by giving the domain name."<br>
+            <img src="img/streaak.png"><br>
+            <span>streaak</span>
+          </blockquote>
+        </div>
+        <div class="one-third column">
+          <blockquote>
+            "A tool to find a date. Oh, wait; that is Tinder. Never mind."<br>
+            <img src="img/karel_origin.jpg"><br>
+            <span>Karel Origin</span>
+          </blockquote>
+        </div>
+        <div class="one-third column">
+          <blockquote>
+            "A tool to generate fancy content injection proof of concepts."<br>
+            <img src="img/neighbour.jpg"><br>
+            <span>Ed's next-door neighbour</span>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="tickets">
+    <div class="wrapper">
+      <h1>View all submitted tool ideas</h1>
+      <p>All submissions are stored on the <i>Ideas</i> Github repository. The tools tracker utilises several labels to help organize and identify individual submissions.</p>
+      <a href="https://github.com/bugbountyprojects/ideas/issues" class="button button-primary">View Submissions</a>
+    </div>
+  </section>
+  <div class="footer">
+    A project maintained by <a href="https://twitter.com/mhmdiaa">Mohammed Diaa</a> and <a href="https://twitter.com/EdOverflow">EdOverflow</a>.
+  </div>
+  <script>
+    document.getElementById("button").addEventListener("click", function() {
+      var title = document.getElementById("title").value;
+      var body = document.getElementById("body").value;
+      window.location.href =
+        "https://github.com/bugbountyprojects/ideas/issues/new?title=" +
+        encodeURIComponent(title) +
+        "&body=" +
+        encodeURIComponent(body);
+      return false;
+    });
+  </script>
+</body>
+</html>
